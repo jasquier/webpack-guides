@@ -13,6 +13,9 @@
 - The way our scripts are setup is BAD!
 - We have a forced order, not readily apparent dependence between our scripts.
 - index.html goes in /dist while index.js goes in /src.
+- webpack finds webpack.config.js in the dir automatically but you should use the --config arg.
+- We can pass arguments to our npm scripts using -- for example...  
+`npm run build -- --config webpack.config.js --colors`
 ---
 #### Asset Management
 ---
