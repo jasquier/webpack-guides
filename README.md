@@ -21,6 +21,8 @@
 - We've incorporated css, images, and fonts so far.
 ---
 #### Output Management
+- We learned about the HtmlWebpackPlugin and the CleanWebpackPlugin, look the both up to learn more.
+- The WebpackManifestPlugin is presented but not explained, learn more!
 ---
 #### Development
 ---
