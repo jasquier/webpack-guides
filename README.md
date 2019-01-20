@@ -7,6 +7,12 @@
 - We install without a package.json.
 ---
 #### Getting Started
+- Uninstalled what we did in the Installation section since we do an npm init here.
+- Created index.html and index.js.
+- We make our npm package private.
+- The way our scripts are setup is BAD!
+- We have a forced order, not readily apparent dependence between our scripts.
+- index.html goes in /dist while index.js goes in /src.
 ---
 #### Asset Management
 ---
