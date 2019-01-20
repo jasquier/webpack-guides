@@ -18,6 +18,7 @@
 `npm run build -- --config webpack.config.js --colors`
 ---
 #### Asset Management
+- We've incorporated css, images, and fonts so far.
 ---
 #### Output Management
 ---
