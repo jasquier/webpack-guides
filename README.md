@@ -25,6 +25,9 @@
 - The WebpackManifestPlugin is presented but not explained, learn more!
 ---
 #### Development
+- The fun stuff!
+- This stuff is **FOR DEVELOPMENT ONLY!!!**
+- Look more into the available source maps.
 ---
 #### Hot Module Replacement
 ---
