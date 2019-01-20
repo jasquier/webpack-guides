@@ -32,6 +32,8 @@
 - We can use dev-middleware ourselves with express for a more custom solution.
 ---
 #### Hot Module Replacement
+- This is one of the most useful features offered by webpack!
+- We need to look into the [React Hot Loader](https://github.com/gaearon/react-hot-loader).
 ---
 #### Tree Shaking
 ---
