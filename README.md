@@ -28,6 +28,8 @@
 - The fun stuff!
 - This stuff is **FOR DEVELOPMENT ONLY!!!**
 - Look more into the available source maps.
+- We can use webpack-dev-middleware ourselves and webpack-dev-server uses dev-middleware internally.
+- We can use dev-middleware ourselves with express for a more custom solution.
 ---
 #### Hot Module Replacement
 ---
