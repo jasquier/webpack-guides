@@ -3,6 +3,8 @@
 ---
 ## Notes
 #### Installation
+- The current version as of this writing is 4.29.0.
+- We install without a package.json.
 ---
 #### Getting Started
 ---
