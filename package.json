@@ -5,11 +5,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "server": "node server.js",
-    "build": "webpack"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +32,7 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-middleware": "^3.5.1",
     "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
     "xml-loader": "^1.2.1"
   }
 }
