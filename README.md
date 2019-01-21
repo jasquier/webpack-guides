@@ -33,9 +33,23 @@
 ---
 #### Hot Module Replacement
 - This is one of the most useful features offered by webpack!
+- What is going on with this module.hot stuff in index.js??? We didn't use this in the DMP.
 - We need to look into the [React Hot Loader](https://github.com/gaearon/react-hot-loader).
 ---
 #### Tree Shaking
+- We indicate in our package.json that our code is side-effect free.
+- A side-effect is defined as code that performs a special behavior when imported, other that exposing one of more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
+- CSS and other files should be added to the sideEffects: [] of package.json
+```
+{
+  "name": "your-project",
+  "sideEffects: [
+    "./src/some-side-effectful-file.js",
+    "*.css"
+  ]
+}
+```
+--- Tree shaking requires some additional considerations during transpilation using babel's preset-env
 ---
 #### Production
 ---
