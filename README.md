@@ -49,9 +49,18 @@
   ]
 }
 ```
---- Tree shaking requires some additional considerations during transpilation using babel's preset-env
+- Tree shaking requires some additional considerations during transpilation using babel's preset-env
 ---
 #### Production
+- We will use separate configs for production and development but still maintain a common config to keeps things DRY.
+- Look into the webpack-merge tool for more tricks.
+- Setting `mode: 'production'` in your config will automatically use the DefinePlugin to set `process.env.NODE_ENV = 'production'`.
+- Note that `NODE_ENV` **IS NOT SET WITHIN THE BUILD SCRIPT**.
+- In v4 code is minified by default in production mode.
+- The TerserPlugin is used to minify code by default, other options exist.
+- Webpack recommends some source maps in production for debugging and benchmarking.
+- Avoid inline-** and eval-** source maps in production since the can increase build size and reduce performance.
+- Look in to minimizing your css for production.
 ---
 #### Code Splitting
 ---
