@@ -39,7 +39,7 @@
 #### Tree Shaking
 - We indicate in our package.json that our code is side-effect free.
 - A side-effect is defined as code that performs a special behavior when imported, other that exposing one of more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
-- CSS and other files should be added to the sideEffects: [] of package.json
+- CSS and other files should be added to the sideEffects: [] of pa63ccckage.json
 ```
 {
   "name": "your-project",
@@ -63,6 +63,7 @@
 - Look in to minimizing your css for production.
 ---
 #### Code Splitting
+- We can either use `entry`, the SplitChunksPlugin, or dynamic imports to split our code.
 ---
 #### Lazy Loading
 ---

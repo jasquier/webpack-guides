@@ -1,16 +1,9 @@
-import { cube } from './math';
-
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Looks like we are in development mode!');
-}
+import _ from 'lodash';
 
 function component() {
-  var element = document.createElement('pre');
+  var element = document.createElement('div');
 
-  element.innerHTML = [
-    'Hello webpack!',
-    '5 cubed is equal to ' + cube(5)
-  ].join('\n\n');
+  element.innerHTML = _.join(['Hello', 'webpack']);
 
   return element;
 }
