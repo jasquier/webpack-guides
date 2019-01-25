@@ -1,3 +1,7 @@
+# My Stuff
+dist/
+# END My Stuff
+
 # Logs
 logs
 *.log
