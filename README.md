@@ -64,7 +64,19 @@
 ---
 #### Code Splitting
 - We can either use `entry`, the SplitChunksPlugin, or dynamic imports to split our code.
----
+- `entry` will duplicate modules across bundles if those modules are included in both entry chunks.
+- `entry` isn't as flexible as the other options.
+- The CommonsChunkPlugin was removed in webpack 4, SplitChunksPlugin is used now.
+- Other splitters include mini-css-extract-plugin, bundle-loader, and promise-loader.
+- Ok so Dynamic Imports are kinda wild. Look into them more, how useful are they vs learning the new syntax / usage?
+- Prefetching and Preloading are something to look into as well, kinda wild stuff.
+- Bundle analysis tools include
+- - the official analyze tool
+- - webpack-chart
+- - webpack-visualizer
+- - webpack-bundle-analyzer
+- - webpack bundle optimize helper
+- Next Steps include looking into Lazy Loading and Caching.
 #### Lazy Loading
 ---
 #### Caching
