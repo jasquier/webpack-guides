@@ -92,6 +92,8 @@ the code changes.
 will change on each build. **We need to prevent this**.
 - The boilerplate webpack adds is called **the runtime** and **the manifest**.
 - We can also extract third party libraries since they change less often.
+- We use the webpack.HashedModuleIdsPlugin to prevent the vendor hash from changing
+when we change our source code.
 ---
 #### Authoring Libraries
 ---
