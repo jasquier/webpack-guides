@@ -78,7 +78,12 @@
 - - webpack bundle optimize helper
 - Next Steps include looking into Lazy Loading and Caching.
 #### Lazy Loading
-- 
+- Lazy Loading involves splitting your code at logical breakpoints and then loading
+it once the user has done something that requires a new block of code. It can speed
+the initial loading of a page.
+- We will have a button that logs a message and we load the message code only when the
+button is clicked for the first time.
+- Look into Lazy Loading and Code Splitting in React.
 ---
 #### Caching
 ---
