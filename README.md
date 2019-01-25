@@ -86,6 +86,12 @@ button is clicked for the first time.
 - Look into Lazy Loading and Code Splitting in React.
 ---
 #### Caching
+- By adding a content hash to our scripts' filenames we can reloading the scripts when
+the code changes.
+- Just adding a content hash isn't enough since webpack adds some boilerplate which
+will change on each build. **We need to prevent this**.
+- The boilerplate webpack adds is called **the runtime** and **the manifest**.
+- We can also extract third party libraries since they change less often.
 ---
 #### Authoring Libraries
 ---
